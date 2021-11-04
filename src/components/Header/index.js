@@ -1,19 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import "../../App.css";
 import logo from "../../assets/branding/Portfolio Logo.png";
 
-const menuNavEl = document.querySelector("#navbarMenu");
-const burgerNavEl = document.querySelector("#navbarBurger");
+function Header() {
+  const [isActive, setActive] = useState("true");
 
-let toggleMenu = (event) => {
-  if (event.target === burgerNavEl) {
-    event.preventDefault();
-  }
-  //   menuNavEl.classList.toggle("is-active");
-};
+    const toggleMenu = () => {
+        setActive(!isActive);
+    };
 
-function Header(props) {
   return (
     <header>
       <nav className="navbar has-shadow is-brand-dark-grey is-fixed-top is-spaced">
@@ -27,7 +23,7 @@ function Header(props) {
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a
             role="button"
-            className="navbar-burger"
+            className={`navbar-burger ${isActive ? "" : "is-active"}`}
             id="navbarBurger"
             onClick={toggleMenu}
           >
@@ -36,7 +32,7 @@ function Header(props) {
             <span></span>
           </a>
         </div>
-        <div id="navbarMenu" className="navbar-menu">
+        <div id="navbarMenu" className={`navbar-menu ${isActive ? "" : "is-active"}`} onClick={toggleMenu}>
           <div className="navbar-end">
             <RouterLink to="/" className="navbar-item">
               -Home-
