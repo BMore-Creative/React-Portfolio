@@ -1,9 +1,9 @@
 # React Portfolio
   ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) 
 
+![image](https://user-images.githubusercontent.com/80925456/140337512-fa1eaf16-e327-4800-9a13-b354ee055a5b.png)
 
-
-Live Link:
+Live Link: https://bmore-creative.github.io/React-Portfolio/
 
 ## Table of Contents
 
