@@ -1,7 +1,17 @@
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
+import "../../App.css";
+import logo from "../../assets/branding/Portfolio Logo.png";
 
-import logo from "../../assets/branding/Portfolio Logo.png"
+const menuNavEl = document.querySelector("#navbarMenu");
+const burgerNavEl = document.querySelector("#navbarBurger");
+
+let toggleMenu = (event) => {
+  if (event.target === burgerNavEl) {
+    event.preventDefault();
+  }
+  //   menuNavEl.classList.toggle("is-active");
+};
 
 function Header(props) {
   return (
@@ -15,7 +25,12 @@ function Header(props) {
             />
           </RouterLink>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a role="button" className="navbar-burger" id="navbarBurger">
+          <a
+            role="button"
+            className="navbar-burger"
+            id="navbarBurger"
+            onClick={toggleMenu}
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -23,18 +38,18 @@ function Header(props) {
         </div>
         <div id="navbarMenu" className="navbar-menu">
           <div className="navbar-end">
-            <a href="#home" className="navbar-item">
+            <RouterLink to="/" className="navbar-item">
               -Home-
-            </a>
-            <a href="#about-me" className="navbar-item" id="about-link">
+            </RouterLink>
+            <RouterLink to="/about-me/" className="navbar-item">
               -About Me-
-            </a>
-            <a href="#portfolio" className="navbar-item" id="portfolio-link">
+            </RouterLink>
+            <RouterLink to="/portfolio/" className="navbar-item">
               -Portfolio-
-            </a>
-            <a href="#contact-me" className="navbar-item" id="contact-link">
-              -Contact Me-
-            </a>
+            </RouterLink>
+            <RouterLink to="/contact/" className="navbar-item">
+              -Contact-
+            </RouterLink>
             <a
               href="https://drive.google.com/file/d/1i6sxhPKSE-ML0MUnlMxQ3gQsfsa_LXda/view?usp=sharing"
               target="_blank"

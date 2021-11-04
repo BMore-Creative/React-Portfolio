@@ -2,10 +2,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .navbar-item,
 .navbar-burger span {
   color: #d8dbe0;

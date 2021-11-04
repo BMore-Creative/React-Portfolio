@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import "./App.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -21,6 +20,15 @@ function App() {
           </Route>
           <Route exact path="/about-me/">
             <About />
+          </Route>
+          <Route exact path="/portfolio/">
+            <Portfolio />
+          </Route>
+          <Route exact path="/contact/">
+            <Contact />
+          </Route>
+          <Route exact path="/resume/">
+            <Resume />
           </Route>
         </Routes>
         {/* <Footer /> */}
