@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <header>
-      <nav className="navbar has-shadow is-brand-dark-grey is-fixed-top is-spaced">
+      <nav className="navbar has-shadow is-brand-dark-grey is-spaced">
         <div className="navbar-brand">
           <RouterLink to="/">
             <img
