@@ -34,7 +34,7 @@ function Header() {
         </div>
         <div id="navbarMenu" className={`navbar-menu ${isActive ? "" : "is-active"}`} onClick={toggleMenu}>
           <div className="navbar-end">
-            <RouterLink to="/" className="navbar-item">
+            <RouterLink to="/React-Portfolio/" className="navbar-item">
               -Home-
             </RouterLink>
             <RouterLink to="/React-Portfolio/about-me/" className="navbar-item">
