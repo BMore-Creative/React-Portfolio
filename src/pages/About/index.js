@@ -7,9 +7,11 @@ import avatar from "../../assets/branding/Avatar.png";
 
 function About() {
   return (
-    <div className="flex-wrapper">
-      <Header />
-      <section className="is-page-content is-flex is-align-items-center is-brand-grey">
+    <div className="hero is-fullheight">
+      <div className="hero-head is-brand-dark-grey">
+        <Header />
+      </div>
+      <section className="hero-body is-brand-grey">
         <article className="section is-brand-grey">
           <div className="message-header">
             <p className="title is-font-light-grey">-About Me-</p>
@@ -108,7 +110,9 @@ function About() {
           </div>
         </article>
       </section>
-      <Footer />
+      <div className="hero-foot">
+        <Footer />
+      </div>
     </div>
   );
 }
