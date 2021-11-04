@@ -9,10 +9,10 @@ import Contact from "./pages/Contact";
 function App() {
   return (
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-me/" element={<About />} />
-        <Route path="/portfolio/" element={<Portfolio />} />
-        <Route path="/contact/" element={<Contact />} />
+        <Route path="/React-Portfolio/" element={<Home />} />
+        <Route path="/React-Portfolio/about-me/" element={<About />} />
+        <Route path="/React-Portfolio/portfolio/" element={<Portfolio />} />
+        <Route path="/React-Portfolio/contact/" element={<Contact />} />
         <Route path="*" element={<Home />} />
       </Routes>
   );
