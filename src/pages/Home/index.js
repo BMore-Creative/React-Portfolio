@@ -1,9 +1,15 @@
 import React from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import "../../App.css"
 
 function Home() {
   return (
-    <section className="hero is-fullheight-with-navbar is-brand-grey" id="home">
-      <div className="hero-body">
+    <section className="hero is-fullheight" id="home">
+      <div className="hero-head is-brand-dark-grey">
+        <Header />
+      </div>
+      <div className="hero-body is-brand-grey">
         <p className="is-font-light-grey subtitle">Nice to meet you, I'm</p>
         <p className="title is-hero-heading">
           <span className="is-font-green">B</span>rian
@@ -22,7 +28,11 @@ function Home() {
               <span className="link">bamore404@gmail.com</span>
             </span>
           </a>
-          <a href="https://github.com/BMore-Creative" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/BMore-Creative"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span className="icon-text has-text-grey-lighter">
               <span className="icon">
                 <i className="fab fa-github"></i>
@@ -30,7 +40,11 @@ function Home() {
               <span className="link">GitHub</span>
             </span>
           </a>
-          <a href="https://www.linkedin.com/in/bmore-creative" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/bmore-creative"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span className="icon-text has-text-grey-lighter">
               <span className="icon">
                 <i className="fab fa-linkedin"></i>
@@ -40,7 +54,8 @@ function Home() {
           </a>
           <a
             href="https://drive.google.com/file/d/1i6sxhPKSE-ML0MUnlMxQ3gQsfsa_LXda/view?usp=sharing"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className="icon-text has-text-grey-lighter">
               <span className="icon">
@@ -51,8 +66,11 @@ function Home() {
           </a>
         </div>
       </div>
+      <div className="hero-foot">
+        <Footer />
+      </div>
     </section>
   );
-};
+}
 
 export default Home;

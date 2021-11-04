@@ -13,7 +13,7 @@
   }
 }
 
-.hero.is-fullheight-with-navbar .hero-body {
+.hero.is-fullheight .hero-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,14 +23,6 @@
 .is-hero-heading {
     font-size: 5rem;
     color: #d8dbe0
-}
-
-#home {
-    scroll-margin-top: 55px;
-}
-
-.anchor {
-    scroll-margin-top: 125px;
 }
 
 .message-header {
