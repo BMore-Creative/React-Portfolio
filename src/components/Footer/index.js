@@ -22,7 +22,7 @@ function Footer() {
               <span className="icon">
                 <i className="fab fa-github"></i>
               </span>
-              <span class="link">GitHub</span>
+              <span className="link">GitHub</span>
             </span>
           </a>
           <a
@@ -35,7 +35,7 @@ function Footer() {
               <span className="icon">
                 <i className="fab fa-linkedin"></i>
               </span>
-              <span class="link">LinkedIn</span>
+              <span className="link">LinkedIn</span>
             </span>
           </a>
         </div>
