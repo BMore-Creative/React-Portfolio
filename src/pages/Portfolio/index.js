@@ -3,12 +3,12 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "../../App.css";
 
+import project1 from "../../assets/projects/Tech-Blog.png";
 import project2 from "../../assets/projects/Coffee-Tin.png";
 import project3 from "../../assets/projects/Whats-Cookin.png";
 import project4 from "../../assets/projects/Note-Taker.png";
 import project5 from "../../assets/projects/Professional README Generator Example.webm";
 import project6 from "../../assets/projects/Weather-Dashboard.png";
-import project1 from "../../assets/projects/Tech-Blog.png";
 
 function Portfolio() {
   return (

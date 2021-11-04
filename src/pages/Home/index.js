@@ -5,7 +5,7 @@ import "../../App.css"
 
 function Home() {
   return (
-    <section className="hero is-fullheight" id="home">
+    <section className="hero is-fullheight">
       <div className="hero-head is-brand-dark-grey">
         <Header />
       </div>
