@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Raleway", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-item,
+.navbar-burger span {
+  color: #d8dbe0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .navbar-menu {
+    background-color: #505058;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero.is-fullheight-with-navbar .hero-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.is-hero-heading {
+    font-size: 5rem;
+    color: #d8dbe0
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home {
+    scroll-margin-top: 55px;
+}
+
+.anchor {
+    scroll-margin-top: 125px;
+}
+
+.message-header {
+    border-radius: 0;
+}
+
+.message-header {
+    background-color: #505058;
+}
+
+.message-body,
+.tile {
+    background-color: #d8dbe0;
+}
+
+.box {
+    background-color: white;
+}
+
+.image.is-185x185 {
+    height: 185px;
+    width: 185px;
+}
+
+.image img {
+    height: 100%;
+}
+
+.footer {
+    padding: 1.25rem
+}
+
+.is-brand-green {
+    background-color: #b5e299;
+}
+
+.link:hover,
+.is-font-green {
+    color: #b5e299;
+}
+
+.is-brand-light-grey {
+  background-color: #d8dbe0;
+}
+
+.is-font-light-grey {
+    color: #d8dbe0;
+}
+
+.is-brand-grey {
+  background-color: #505058;
+}
+
+.is-font-grey {
+    color: #505058;
+}
+
+.is-brand-dark-grey {
+  background-color: #313133;
+}
+
+.is-font-dark-grey {
+    color: #313133;
 }
