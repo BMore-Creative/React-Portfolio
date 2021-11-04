@@ -31,7 +31,7 @@ function App() {
             <Resume />
           </Route>
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );
