@@ -14,7 +14,7 @@ function Header() {
     <header>
       <nav className="navbar has-shadow is-brand-dark-grey is-spaced">
         <div className="navbar-brand">
-          <RouterLink to="/">
+          <RouterLink to="/React-Portfolio/">
             <img
               src={logo}
               alt="B More Creative name with light green geometric icon"
@@ -37,13 +37,13 @@ function Header() {
             <RouterLink to="/" className="navbar-item">
               -Home-
             </RouterLink>
-            <RouterLink to="/about-me/" className="navbar-item">
+            <RouterLink to="/React-Portfolio/about-me/" className="navbar-item">
               -About Me-
             </RouterLink>
-            <RouterLink to="/portfolio/" className="navbar-item">
+            <RouterLink to="/React-Portfolio/portfolio/" className="navbar-item">
               -Portfolio-
             </RouterLink>
-            <RouterLink to="/contact/" className="navbar-item">
+            <RouterLink to="/React-Portfolio/contact/" className="navbar-item">
               -Contact-
             </RouterLink>
             <a
